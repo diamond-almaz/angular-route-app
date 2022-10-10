@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 import { DogCardComponent } from './components/dog-card/dog-card.component';
+import { ProductsPageComponent } from './pages/products-page/products-page.component';
 
 
 
@@ -23,6 +24,7 @@ import { DogCardComponent } from './components/dog-card/dog-card.component';
     DogsPageComponent,
     NavComponent,
     DogCardComponent,
+    ProductsPageComponent,
   ],
   imports: [
     BrowserModule,
