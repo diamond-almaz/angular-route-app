@@ -13,11 +13,13 @@
         padding: 20px;
         height: 100%;
         max-width: 400px;
+        box-sizing: border-box;
     }
 
     &-select {
         width: 100%;
         margin-bottom: 20px;
+        box-sizing: border-box;
         mat-form-field {
             width: 100%;
         }
@@ -28,7 +30,7 @@
 @media (max-width:801px)  { 
   .dogsPage {
     &-wrapper {
-        max-width: fit-content;
+        max-width: 100%;
         width: 100%;
     }
   }
