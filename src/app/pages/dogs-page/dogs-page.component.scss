@@ -1,0 +1,17 @@
+
+.dogsPage {
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+        background: url('https://us.123rf.com/450wm/in8finity/in8finity2103/in8finity210300060/167008801-dog-seamless-pattern-cute-cartoon-style-vector.jpg?ver=6');
+    }
+
+    &-select {
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,12 @@
+<div class="dogsPage-wrapper">
+    <mat-card class="dogsPage-select">
+    <mat-form-field appearance="outline">
+        <mat-label>Select an breed</mat-label>
+        <mat-select [value]="selected" (selectionChange)="selectBreed($event)">
+          <mat-option *ngFor="let breed of breeds" [value]="breed">{{breed | titlecase}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+    </mat-card>
+
+    <app-dog-card *ngIf="pictureUrl" [breed]="selected" [pictureUrl]="pictureUrl"></app-dog-card>
+</div>
