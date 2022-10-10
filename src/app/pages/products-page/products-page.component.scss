@@ -5,6 +5,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      box-sizing: border-box;
     }
 
     &-products {
@@ -19,6 +20,7 @@
 
 @media (max-width:801px)  { 
   .productsPage-wrapper {
+    max-width: 100%;
     padding: 5px;
   }
 }
