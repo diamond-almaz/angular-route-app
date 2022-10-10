@@ -9,6 +9,7 @@ import { IProduct } from 'src/assets/types';
 export class ProductCardComponent implements OnInit {
 
   @Input() product!: IProduct;
+  @Input() searchText: string | null = '';
 
   constructor() { }
 

@@ -25,6 +25,7 @@ import {DialogModule} from '@angular/cdk/dialog';
 import { UserModalComponent } from './components/user-modal/user-modal.component';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { HighlightSearchPipe } from './shared/highlight-search.pipe';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     FilterComponent,
     UserCardComponent,
     UserModalComponent,
+    HighlightSearchPipe,
   ],
   imports: [
     BrowserModule,
