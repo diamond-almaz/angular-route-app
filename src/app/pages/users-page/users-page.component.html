@@ -1,6 +1,7 @@
 <div class="usersPage-wrapper">
 
     <div class="usersPage-cards">
+        <mat-spinner *ngIf="loading"></mat-spinner>
         <app-user-card *ngFor="let user of users" [user]="user" (clickMoreInfo)="openUserModal($event)"></app-user-card>
     </div>
 </div>

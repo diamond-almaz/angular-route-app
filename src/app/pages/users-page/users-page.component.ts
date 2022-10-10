@@ -15,6 +15,8 @@ export class UsersPageComponent implements OnInit {
 
   users: IUser[] = []
 
+  loading = true;
+
   constructor(
     public dialog: MatDialog,
     private backendService: BackendService,
@@ -24,6 +26,7 @@ export class UsersPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.backendService.getUsers().subscribe((users) => {
+      this.loading = false;
       this.users = users;
     })
 

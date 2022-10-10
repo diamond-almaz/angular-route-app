@@ -17,6 +17,8 @@ export class DogsPageComponent implements OnInit {
 
   pictureUrl: string = '';
 
+  loading = true;
+
   constructor(private backendService: BackendService, private router: Router, private activateRoute: ActivatedRoute) { 
    
   }

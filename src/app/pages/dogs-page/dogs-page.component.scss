@@ -1,4 +1,10 @@
 
+:host {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .dogsPage {
     &-wrapper {
         display: flex;
@@ -6,11 +12,24 @@
         align-items: center;
         padding: 20px;
         height: 100%;
+        max-width: 400px;
     }
 
     &-select {
-        width: fit-content;
+        width: 100%;
         margin-bottom: 20px;
+        mat-form-field {
+            width: 100%;
+        }
     }
 
+}
+
+@media (max-width:801px)  { 
+  .dogsPage {
+    &-wrapper {
+        max-width: fit-content;
+        width: 100%;
+    }
+  }
 }
