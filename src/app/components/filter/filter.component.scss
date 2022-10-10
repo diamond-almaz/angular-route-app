@@ -54,3 +54,11 @@
     }
     margin-bottom: 20px;
 }
+
+@media (max-width:801px)  { 
+  .example-accordion {
+    display: block;
+    max-width: fit-content;
+    width: 100%;
+  }
+}

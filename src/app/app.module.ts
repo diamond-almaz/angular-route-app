@@ -24,6 +24,8 @@ import { UserCardComponent } from './components/user-card/user-card.component';
 import {DialogModule} from '@angular/cdk/dialog';
 import { UserModalComponent } from './components/user-modal/user-modal.component';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -52,6 +54,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
     MatInputModule,
     ReactiveFormsModule,
     MatDialogModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

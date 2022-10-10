@@ -1,0 +1,98 @@
+.modal-wrapper {
+    width: 600px;
+}
+
+:host {
+    mat-dialog-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.userInfo-wrapper {
+    display: flex;
+}
+
+header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 50%;
+    }
+    .nameEmail {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .name {
+            font-weight: 800;
+            font-size: 20px;
+        }
+        .email {
+            font-weight: 300;
+        }
+    }
+}
+
+main {
+  font-weight: 300;
+  .otherInfo-item {
+    font-weight: 400;
+    :first-child {
+        color: #A3A3A3;
+    }
+  }
+}
+
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (max-width:801px)  { 
+
+    .userInfo-wrapper {
+        display: block;
+    }
+    .modal-wrapper {
+        width: auto;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 50%;
+        }
+        .nameEmail {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .name {
+                font-weight: 800;
+                font-size: 20px;
+            }
+            .email {
+                font-weight: 300;
+            }
+        }
+    }
+    
+    main {
+      font-weight: 300;
+      .otherInfo-item {
+        font-weight: 400;
+        :first-child {
+            color: #A3A3A3;
+        }
+      }
+    }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
