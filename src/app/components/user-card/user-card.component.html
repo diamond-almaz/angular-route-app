@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>{{user.name}}</mat-card-title>
+      <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+      <img mat-card-sm-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMKGfeMBtoJX9xz5OzpXy9RrphRaANKpl4A&usqp=CAU" >
+    </mat-card-title-group>
+    <mat-card-content>
+        <span *ngFor="let companyField of user.company | keyvalue">
+            {{companyField.value}}
+            &nbsp;
+        </span>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">MORE INFO</button>
+    </mat-card-actions>
+</mat-card>
+  

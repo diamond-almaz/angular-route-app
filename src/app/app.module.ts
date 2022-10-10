@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
-import { TodosPageComponent } from './pages/todos-page/todos-page.component';
+import { UsersPageComponent } from './pages/users-page/users-page.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { DogsPageComponent } from './pages/dogs-page/dogs-page.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -20,19 +20,21 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { FilterComponent } from './components/filter/filter.component';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserCardComponent } from './components/user-card/user-card.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodosPageComponent,
+    UsersPageComponent,
     DogsPageComponent,
     NavComponent,
     DogCardComponent,
     ProductsPageComponent,
     ProductCardComponent,
     FilterComponent,
+    UserCardComponent,
   ],
   imports: [
     BrowserModule,

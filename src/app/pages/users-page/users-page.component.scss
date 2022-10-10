@@ -1,0 +1,13 @@
+.usersPage {
+    &-wrapper {
+        padding: 20px;
+    }
+
+    &-cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}

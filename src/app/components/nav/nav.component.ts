@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
 
   links = LINKS;
 
-  activeLink = PAGES.todos;
+  activeLink = PAGES.users;
 
   constructor(private router: Router) { }
 

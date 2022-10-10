@@ -1,15 +1,15 @@
 import { PAGES } from "./types";
 
 export const LINKS_TITLE = {
-    [PAGES.todos]: 'todos',
+    [PAGES.users]: 'users',
     [PAGES.dogs]: 'dogs',
     [PAGES.products]: 'products',
 }
 
 export const LINKS = [
     {
-        link: PAGES.todos,
-        title: LINKS_TITLE[PAGES.todos],
+        link: PAGES.users,
+        title: LINKS_TITLE[PAGES.users],
     },
     {
         link: `${PAGES.dogs}/husky`,

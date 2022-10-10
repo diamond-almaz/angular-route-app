@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { BREED_LIST, IProduct } from 'src/assets/types';
+import { BREED_LIST, IProduct, IUser } from 'src/assets/types';
 import { map } from 'rxjs';
 
 const BASE_URL_PRODUCTS = 'https://dummyjson.com/products';
@@ -12,10 +12,13 @@ interface ResponseProducts { products: IProduct[]}
 })
 export class BackendService {
 
-  constructor(private http: HttpClient
-    ) { }
+  constructor(private http: HttpClient) { }
 
     ngOnInit() {
+    }
+
+    getUsers() {
+      return this.http.get<IUser[]>('https://jsonplaceholder.typicode.com/users')
     }
 
     getDogPictureByBreed(breed: BREED_LIST) {
