@@ -37,3 +37,17 @@ export enum PRODUCTS_CATEGORIES {
   motorcycle = "motorcycle",
   lighting = "lighting"
 }
+
+export interface IProduct {
+  id: number,
+  title: string,
+  description: string,
+  price: number,
+  discountPercentage: number,
+  rating: number,
+  stock: number,
+  brand: string,
+  category: string,
+  thumbnail: "...",
+  images: string[]
+}

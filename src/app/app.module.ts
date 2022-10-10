@@ -14,6 +14,12 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCardModule} from '@angular/material/card';
 import { DogCardComponent } from './components/dog-card/dog-card.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import {MatButtonModule} from '@angular/material/button';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { FilterComponent } from './components/filter/filter.component';
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -25,6 +31,8 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
     NavComponent,
     DogCardComponent,
     ProductsPageComponent,
+    ProductCardComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +43,10 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
     MatGridListModule,
     MatSelectModule,
     MatCardModule,
+    MatButtonModule,
+    CdkAccordionModule,
+    MatInputModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
