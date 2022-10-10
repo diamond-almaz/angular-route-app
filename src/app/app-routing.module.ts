@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PAGES } from 'src/assets/types';
+import { UserModalComponent } from './components/user-modal/user-modal.component';
 import { DogsPageComponent } from './pages/dogs-page/dogs-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { UsersPageComponent } from './pages/users-page/users-page.component';

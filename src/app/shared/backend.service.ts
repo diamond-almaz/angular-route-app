@@ -4,6 +4,7 @@ import { BREED_LIST, IProduct, IUser } from 'src/assets/types';
 import { map } from 'rxjs';
 
 const BASE_URL_PRODUCTS = 'https://dummyjson.com/products';
+const BASE_URL_USERS = 'https://jsonplaceholder.typicode.com/users';
 
 interface ResponseProducts { products: IProduct[]} 
 
@@ -18,7 +19,11 @@ export class BackendService {
     }
 
     getUsers() {
-      return this.http.get<IUser[]>('https://jsonplaceholder.typicode.com/users')
+      return this.http.get<IUser[]>(BASE_URL_USERS)
+    }
+
+    getUsersByID(id: number) {
+      return this.http.get<IUser>(`${BASE_URL_USERS}/${id}`)
     }
 
     getDogPictureByBreed(breed: BREED_LIST) {

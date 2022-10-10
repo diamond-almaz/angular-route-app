@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { IUser } from 'src/assets/types';
 
 @Component({
@@ -10,9 +10,15 @@ export class UserCardComponent implements OnInit {
 
   @Input() user!: IUser;
 
+  @Output() clickMoreInfo: EventEmitter<number> = new EventEmitter()
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onMoreInfo() {
+    this.clickMoreInfo.emit(this.user.id)
   }
 
 }

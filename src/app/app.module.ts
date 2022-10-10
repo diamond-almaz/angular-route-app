@@ -19,10 +19,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { FilterComponent } from './components/filter/filter.component';
 import {MatInputModule} from '@angular/material/input';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { UserCardComponent } from './components/user-card/user-card.component';
-
-
+import {DialogModule} from '@angular/cdk/dialog';
+import { UserModalComponent } from './components/user-modal/user-modal.component';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { UserCardComponent } from './components/user-card/user-card.component';
     ProductCardComponent,
     FilterComponent,
     UserCardComponent,
+    UserModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,7 @@ import { UserCardComponent } from './components/user-card/user-card.component';
     CdkAccordionModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
