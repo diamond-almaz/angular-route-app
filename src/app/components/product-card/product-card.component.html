@@ -8,8 +8,7 @@
     </mat-card-header>
     <img class="main-image" mat-card-image [src]="product.images[0]" alt="Photo of a Shiba Inu">
     <mat-card-content>
-      <p>
-        {{product.description}}
+      <p [innerHTML]="product.description | highlightSearch: searchText">
       </p>
     </mat-card-content>
     <!-- <mat-card-actions>
