@@ -19,7 +19,6 @@ export class FilterComponent implements AfterViewInit {
   search = new FormControl('')
   constructor() { }
   ngAfterViewInit(): void {
-    console.log('accordionItem', this.accordionItem)
     this.accordionItem.open()
     this.defaultValue.subscribe((newValue) => {
       this.search.setValue(newValue)
@@ -33,6 +32,10 @@ export class FilterComponent implements AfterViewInit {
   
   onSearch() {
     this.searchProducts(this.search.value as string)
+  }
+
+  onClear() {
+    this.searchProducts('');
   }
 
 }

@@ -24,8 +24,12 @@ export class ProductsService {
 
   getProductsBySearch(searchText: string) {
     this.searchText.next(searchText);
-    this.backendService.getProductsBySearch(searchText).subscribe((products) => {
-      this.products.next(products);
-    })
+    if (searchText) {
+      this.backendService.getProductsBySearch(searchText).subscribe((products) => {
+        this.products.next(products);
+      })
+    } else {
+      this.getProducts();
+    }
   }
 }

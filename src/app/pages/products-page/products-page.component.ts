@@ -34,12 +34,16 @@ export class ProductsPageComponent implements OnInit {
   }
 
   getProductsBySearch(searchText: string, isNavigate = true) {
-    if (isNavigate) {
-      this.router.navigate(this.activatedRoute.snapshot.url, {
-        queryParams: {
-          search: searchText,
-        }
-      })
+    if (searchText) {
+      if (isNavigate) {
+        this.router.navigate(this.activatedRoute.snapshot.url, {
+          queryParams: {
+            search: searchText,
+          }
+        })
+      }
+    } else {
+      this.router.navigate(this.activatedRoute.snapshot.url);
     }
     this.productsServices.getProductsBySearch(searchText)
   }
