@@ -24,7 +24,7 @@
             <input #inputRef matInput placeholder="Enter to search" [formControl]="search">
         </mat-form-field>
         <button mat-raised-button color="primary" [disabled]="!inputRef.value" (click)="onSearch() ">Search</button>
-        <button class="example-accordion-item-clearBtn" mat-raised-button (click)="onClear()">Clear</button>
+        <button class="example-accordion-item-clearBtn" [disabled]="!inputRef.value" mat-raised-button (click)="onClear()">Clear</button>
       </div>
     </cdk-accordion-item>
   </cdk-accordion>
